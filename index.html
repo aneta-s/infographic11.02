@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--<script type="text/javasript" src="script.js">
+    </script>-->
+
+    <script type="text/javasript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js">
+    </script>
+    <title>Infographic11.02</title>
+</head>
+<body>
+    <!-- section instead of divs? -->
+    <section class="title">
+        <p class="subtitle">Arbeidsmarkt  nu Kans op het vinden van baanin  corona tijde Kans op het vinden van baanin  corona tijde</p>
+
+        <h1>Kans op het vinden van baanin  corona tijden</h1>
+
+    </section>
+    <div class="cover">
+        <canvas id="coverChart"></canvas>
+    </div>
+    <script>
+        let coverChart = document.getElementById('coverChart').getContext('2d');
+        let typeChart = new Chart (coverChart, {
+            type: 'bar',
+            data: {
+                labels: ['creativiteit', 'inzicht', 'inspireren en overtuigen', 'vooruitstrevend', 'vastbesloten en gepassioneerd', 'altruistisch'],
+                datasets: [{
+                    label: 'Punten',
+                    data: [20, 10, 4, 2, 29, 45
+                    ]
+                }]
+            },
+            options: {}
+        });
+    </script>
+</body>
+</html>
