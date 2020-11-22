@@ -1,43 +1,42 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <!--<script type="text/javasript" src="script.js">
-    </script>-->
 
-    <script type="text/javasript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Infographic11.02</title>
-</head>
-<body>
-    <!-- section instead of divs? -->
-    <section class="title">
-        <p class="subtitle">Arbeidsmarkt  nu Kans op het vinden van baanin  corona tijde Kans op het vinden van baanin  corona tijde</p>
+  </head>
 
-        <h1>Kans op het vinden van baanin  corona tijden</h1>
-
-    </section>
-    <div class="cover">
-        <canvas id="coverChart"></canvas>
+    <div class="container">
+      <div class="zone green">
+        <h1>Meeste kansrijke beroep alle niveaus lbo mbo hbo</h1>
+        <h2>Beropen naam</h2>
+        <p>
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed to using 'Content here, content here', making it
+          look like readable English.
+        </p>
+      </div>
+      <div class="zone red">
+        <h1>Alle niveaus lbo mbo hbo</h1>
+        <h2>48357349</h2>
+        <p>
+          Various versions have evolved over the years, sometimes by accident,
+          sometimes on purpose (injected humour and the like).
+        </p>
+      </div>
+      
     </div>
-    <script>
-        let coverChart = document.getElementById('coverChart').getContext('2d');
-        let typeChart = new Chart (coverChart, {
-            type: 'bar',
-            data: {
-                labels: ['creativiteit', 'inzicht', 'inspireren en overtuigen', 'vooruitstrevend', 'vastbesloten en gepassioneerd', 'altruistisch'],
-                datasets: [{
-                    label: 'Punten',
-                    data: [20, 10, 4, 2, 29, 45
-                    ]
-                }]
-            },
-            options: {}
-        });
-    </script>
-</body>
+    <!-- <script src="script.js"></script> -->
+  </body>
 </html>

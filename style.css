@@ -1,14 +1,54 @@
 ﻿* {
     box-sizing: border-box;
+    --color: #d0afcf;
+    color: rgba(240, 221, 241);
+     
 }  
 .title p {
     font-style: italic;
+    color: rgba(68, 67, 92);
 }
 
 h1 {
     text-transform:uppercase;
 }
     
-    body
-{
+body {
+    font-family: Raleway, sans-serif;
+    background-color: var(--color);
 }
+/* Areas are individual cards 
+Give it a property of display grid, all kids are now the part of the grid system
+*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: 1fr;
+
+}
+/* Things in the individual grid */
+    /* Grid with different sizes
+what i want in terms of the grid system 
+Where it should start and end*/
+.green {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /* this moves up to     
+    grid-row: 1/2; 1*/
+    border: 1px dashed black;
+}
+.red {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    /* it takes 2 grid systems , when it comes to columns start at one and end at three */
+    grid-column: span 2;
+    align-self: start;
+    /* justify-self: end; */
+    border: 1px dashed black;
+
+}
+
+
+
+
+
